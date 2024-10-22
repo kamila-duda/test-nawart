@@ -1,0 +1,93 @@
+/* gallery.css */
+
+/* Styl dla galerii obrazków */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+  }
+  
+  /* Styl dla poszczególnych elementów w galerii */
+  .galleryItem {
+    max-width: 250px;
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+  
+  .galleryItem img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .galleryItem:hover {
+    transform: scale(1.05); /* Powiększenie obrazka przy najechaniu myszką */
+  }
+  
+  /* Styl dla modala (powiększonego obrazka) */
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8); /* Czarne tło z przeźroczystością */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .modal img {
+    max-width: 90%;
+    max-height: 90%;
+    margin: auto;
+  }
+  
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    color: white;
+    font-size: 24px;
+  }
+  
+  .index {
+    color: white;
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  
+  .prev,
+  .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: white;
+    font-size: 24px;
+  }
+  
+  .prev {
+    left: 10px;
+  }
+  
+  .next {
+    right: 10px;
+  }
+  
+  /* Styl dla komunikatu o ładowaniu */
+  .loading {
+    position: fixed;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    z-index: 1000;
+  }
+  

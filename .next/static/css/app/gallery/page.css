@@ -1,0 +1,96 @@
+/*!*******************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./app/components/gallery/imagesGallery.module.css ***!
+  \*******************************************************************************************************************************************************************************************************************************************************************************************/
+/* gallery.css */
+
+/* Styl dla galerii obrazków */
+.imagesGallery_gallery__CpPq5 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+  }
+  
+  /* Styl dla poszczególnych elementów w galerii */
+  .imagesGallery_galleryItem__jDZFv {
+    max-width: 250px;
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+  
+  .imagesGallery_galleryItem__jDZFv img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .imagesGallery_galleryItem__jDZFv:hover {
+    transform: scale(1.05); /* Powiększenie obrazka przy najechaniu myszką */
+  }
+  
+  /* Styl dla modala (powiększonego obrazka) */
+  .imagesGallery_modal__XmXq3 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8); /* Czarne tło z przeźroczystością */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .imagesGallery_modal__XmXq3 img {
+    max-width: 90%;
+    max-height: 90%;
+    margin: auto;
+  }
+  
+  .imagesGallery_close__tSYX_ {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    color: white;
+    font-size: 24px;
+  }
+  
+  .imagesGallery_index__DqmfA {
+    color: white;
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  
+  .imagesGallery_prev___FpcK,
+  .imagesGallery_next__g6Yky {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: white;
+    font-size: 24px;
+  }
+  
+  .imagesGallery_prev___FpcK {
+    left: 10px;
+  }
+  
+  .imagesGallery_next__g6Yky {
+    right: 10px;
+  }
+  
+  /* Styl dla komunikatu o ładowaniu */
+  .imagesGallery_loading__DZi0t {
+    position: fixed;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    z-index: 1000;
+  }
+  
